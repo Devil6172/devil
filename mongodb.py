@@ -11,7 +11,7 @@ Authdb='MagicHS'
 
 ##### 資料庫連接 #####
 def constructor():
-    client = pymongo.MongoClient("mongodb://HStory:5ns960552@hstorybase-shard-00-00-hb6rs.gcp.mongodb.net:27017,hstorybase-shard-00-01-hb6rs.gcp.mongodb.net:27017,hstorybase-shard-00-02-hb6rs.gcp.mongodb.net:27017/test?ssl=true&replicaSet=HStoryBase-shard-0&authSource=admin&retryWrites=true&w=majority")
+    client = MongoClient("mongodb://HStory:5ns960552@hstorybase-shard-00-00-hb6rs.gcp.mongodb.net:27017,hstorybase-shard-00-01-hb6rs.gcp.mongodb.net:27017,hstorybase-shard-00-02-hb6rs.gcp.mongodb.net:27017/test?ssl=true&replicaSet=HStoryBase-shard-0&authSource=admin&retryWrites=true&w=majority")
 
     db = client[Authdb]
     return db
