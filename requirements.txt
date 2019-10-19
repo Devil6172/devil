@@ -8,4 +8,4 @@ SnowNLP
 emoji
 pyshorteners
 scipy
-Flask
+Flask linebot
